@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+}
+
+.make-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    color : white;
+    font-size: 4rem;
+
+    font-family: cursive;
+
+    transition: background 2s;
+}
+
+div:hover {
+    background: gold !important;
+}

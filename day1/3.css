@@ -1,0 +1,16 @@
+body{
+    margin: 0px;
+}
+
+.make-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div {
+    background: royalblue;
+    color: white;
+    font-size: 4rem;
+}

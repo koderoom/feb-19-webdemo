@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+}
+
+/** ELEMENT RULE */
+p {
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px;
+    
+    border-radius: 5px;
+    margin: 2px;;
+}
+
+/** CLASS RULE **/
+.one {
+    background: orange;
+    height: 33.3%;
+}
+
+.two {
+    background: whitesmoke;
+    color: black;
+    height: 33.3%;
+}
+
+.three {
+    background: green;
+    height: 33.3%;
+}
