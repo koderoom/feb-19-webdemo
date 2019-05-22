@@ -9,12 +9,7 @@ html, body {
     align-items: center;
 }
 
-div {
-    background: linear-gradient(to bottom, rgb(221, 152, 152), rgb(187, 38, 63));
-    color : ghostwhite;
-    font-size: 5rem;
-    animation: first 2s linear 2;
-}
+
 
 img {
     border-radius: 5px;
