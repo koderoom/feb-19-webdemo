@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+.make-center {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+#div1 {
+    
+    height: 95%;
+}
+
+img {
+    border: 20px dotted forestgreen; 
+    border-radius: 5px;
+
+    height: 90%;
+    width: 100%;
+
+    object-fit: contain;
+}
