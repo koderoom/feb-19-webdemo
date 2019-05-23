@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+
+#div1 {
+    height: 60px;
+    background: royalblue;
+}
+
+#div1.child-align {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+div.child1 {
+    font-size: 3rem; 
+    font-weight: bold;
+    color:whitesmoke; 
+    padding-left:5px; 
+    letter-spacing: 4px; 
+    font-family: monospace;
+
+    transition: background 500ms;
+}
+
+div.child1:hover {
+    border-radius: 5px;
+    background: rgb(238, 234, 234, .2);
+}
+
+
+div.child2 {
+    font-size: 1.5rem; 
+    color:whitesmoke; 
+    padding-right:5px; 
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+
+.make-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beautify {
+    font-size: 2rem;
+    font-weight: bold;
+    color : white;
+    font-family: cursive;
+    letter-spacing: 4px;
+}
