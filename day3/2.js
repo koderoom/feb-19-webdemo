@@ -65,3 +65,25 @@ function addMoreBlock1() {
     // ADDING NEW OBJECT AS CHILD TO PARENT CONTAINER
     parentContainer.appendChild(newObject);
 }
+
+function postHere() {
+    let superContainer = document.getElementById('parent');
+    let parentContainer = superContainer.children[1];
+
+    let refBlock = parentContainer.children[0];
+    let newBlock = refBlock.cloneNode(true);
+
+    // READ INPUT
+    let postId = document.getElementById('postid');
+    let postValue = postId.value;
+
+    // ADD VALUE TO NEW BLOCK
+    newBlock.innerHTML = postValue;
+
+    // ATTACH TO PARENT
+    parentContainer.insertBefore(newBlock, parentContainer.firstChild);
+
+    // AFTER ALL DONE
+    postId.value = "";
+
+}
