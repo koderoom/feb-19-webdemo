@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="1.css">
+    <script src="1.js"></script>
+
+    <!--INSTEAD OF DOWNLOADING USING CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="div1" style="position: sticky; top:0;" class="child-align">
+
+        <div style="" class="child1">
+            CDAC
+        </div>
+
+        <div onclick="addMoreBlock();" class="child2" style="cursor: pointer; background: navy; padding:5px; border-radius:5px;">
+            ADD MORE
+        </div>
+    </div>
+
+    <!-- BODY PART ONLY FOR INPUT BOX -->
+    <div id="postParent" style="display: flex; margin-top:2px;">
+        <div style="flex:1"></div>
+        <div style="flex:2">
+            <input id="postid" type="text" class="my-input" placeholder="Hey, post here...">
+            <button class="my-btn" onclick="postHereUsingJQuery()">POST HERE</button>
+        </div>
+        <div style="flex:1"></div>
+    </div>
+
+
+    <!-- BODY PART :: SUPER CONTAINER -->
+    <div id="parent" style="display: flex; margin-top:2px;">
+        <div style="flex:1"></div>
+
+        <!-- 2nd block :: PARENT CONTAINER -->
+        <div style="flex:2; ">
+            
+            <!--bolck1-->
+            <div class="make-center beautify" style="margin:2px; background: tomato; height: 150px; border-radius: 5px;">
+                KALPESH
+            </div>
+
+            
+        </div>
+
+        <div style="flex:1"></div>
+    </div>
+
+
+</body>
+</html>
