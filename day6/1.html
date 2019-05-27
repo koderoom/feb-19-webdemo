@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--INSTEAD OF DOWNLOADING USING CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
+    <script src="1.js"></script>
+    <link rel="stylesheet" href="1.css">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+        
+        <!-- NAVBAR-->
+        <div class="row bg-dark" style="height: 50px; position: sticky; top:0; z-index:100">
+            <div class="col-12 text-light d-flex justify-content-between align-items-center">
+                <div>CDAC </div>
+                <div>LOG OUT </div>
+            </div>
+        </div>
+
+        <!-- FORM ELEMENT -->
+        <div class="row mt-1">
+            <div class="col-3"></div>
+
+            <div class="col-6 p-3 rounded" style="background: rgba(0, 0, 0, .4)">
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" id="postid" class="form-control-lg w-75" placeholder="hey, write something...">
+                        <button onclick="postHereUsingJQuery();" type="button" class="btn btn-secondary ">POST HERE</button>
+                    </div>
+                </div>
+
+                <!-- IMAGE / VIDEO -->
+                <div class="row mt-2">
+                    <div class="col-6">
+                        <label class="bg-secondary p-2 w-100 rounded text-light d-flex justify-content-center" style="cursor: pointer">
+                            POST IMAGE
+                            <input id="fileId1" onchange="postImage();" style="display: none;" class="form-control w-100" type="file" name="" >
+                        </label>
+                    </div>
+
+
+                    <div class="col-6">
+                        <label class="bg-secondary w-100 p-2 rounded text-light d-flex justify-content-center" style="cursor: pointer">
+                            POST VIDEO
+                            <input id="fileId2" onchange="postVideo();" style="display: none;" class="form-control w-100" type="file" name="" >
+                        </label>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+
+            <div class="col-3"></div>
+        </div>
+
+        <!-- MAIN SECTION -->
+        <div class="row mt-1">
+            <div class="col-3"></div>
+
+            <!-- BLOCK CONTAINER SECTION -->
+            <div class="col-6 " id="blockParent">
+                
+                <!--block 1 - REFERENCE TEXT BOX -->
+                <div class="row mb-2 border" style="border:5px solid grey !important; border-radius: 5px;   ">
+                    <div class="col-12 beautify bg-secondary rounded text-light d-flex justify-content-center align-items-center" style="height: 100px;">
+                        A
+                    </div>
+
+                    <div class="row mt-1 w-100">
+                        <div class="col-6 ">
+                            <button onclick="likeCount(this)" class="btn btn-danger btn-block" style="cursor: pointer"> 
+                                <i class="far fa-thumbs-up" style="font-size:x-large;"></i> 
+                                <span>200</span> 
+                            </button>
+                        </div>
+
+                        <div class="col-6">
+                            <button  onclick="likeCount(this)" class="btn btn-danger btn-block" style="cursor: pointer"> 
+                                <i class="far fa-bell " style="font-size:x-large;"></i>
+                                <span>200</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- BLOCK - REFERENCE IMAGE -->
+                <div class="row mb-2" id="imgRefBlockId" style="border:5px solid grey !important; border-radius: 5px;   ">
+                    <div class="col-12 beautify bg-secondary rounded text-light d-flex justify-content-center align-items-center" style="height: 200px;">
+                        <img src="1.jpeg" alt="" style="height: 100%; width: 100%; object-fit: contain">
+                    </div>
+
+                    <div class="row mt-1 w-100">
+                            <div class="col-6">
+                                <button onclick="likeCount(this)"  class="btn btn-danger btn-block" style="cursor: pointer"> 
+                                    <i class="far fa-thumbs-up" style="font-size:x-large;"></i>
+                                    <span>100</span>
+                                </button>
+                            </div>
+    
+                            <div class="col-6">
+                                <button  onclick="likeCount(this)" class="btn btn-danger btn-block" style="cursor: pointer"> 
+                                    <i class="far fa-bell" style="font-size:x-large;"></i>
+                                    <span>100</span>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+
+
+                <!-- BLOCK - REFERENCE VIDEO -->
+                <div class="row mb-2" id="videoRefBlockId" style="border:5px solid grey !important; border-radius: 5px;   ">
+                    <div class="col-12 beautify bg-secondary rounded text-light d-flex justify-content-center align-items-center" style="height: 200px;">
+                        <video style="height: 100%; width:100%;" controls>
+                            <source src="2.mp4" />
+                        </video>
+                    </div>
+
+                    <div class="row mt-1 w-100">
+                        <div class="col-6">
+                            <button onclick="likeCount(this)"  class="btn btn-danger btn-block" style="cursor: pointer"> 
+                                <i class="far fa-thumbs-up" style="font-size:x-large;"></i>
+                                <span>50</span>
+                            </button>
+                        </div>
+
+                        <div class="col-6">
+                            <button  onclick="likeCount(this)" class="btn btn-danger btn-block" style="cursor: pointer">
+                                <i class="far fa-bell" style="font-size:x-large;"></i> 
+                                <span>50</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-3"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
