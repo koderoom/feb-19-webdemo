@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devserver": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/koderoom/feb-19-webdemo#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2",
     "bootstrap": "^4.3.1",
     "lite-server": "^2.5.3"
   }
