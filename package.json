@@ -18,9 +18,8 @@
   },
   "homepage": "https://github.com/koderoom/feb-19-webdemo#readme",
   "dependencies": {
-    "animate.css": "^3.7.0",
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1"
+    "@fortawesome/fontawesome-free": "^5.8.2",
+    "bootstrap": "^4.3.1"
   },
   "devDependencies": {
     "lite-server": "^2.5.3"
