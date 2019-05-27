@@ -19,7 +19,9 @@
   "homepage": "https://github.com/koderoom/feb-19-webdemo#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.8.2",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {
     "lite-server": "^2.5.3"
   }
 }
