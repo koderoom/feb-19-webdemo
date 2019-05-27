@@ -19,7 +19,7 @@
   "homepage": "https://github.com/koderoom/feb-19-webdemo#readme",
   "dependencies": {
     "animate.css": "^3.7.0",
-    "bootstrap": "4.1.3",
+    "bootstrap": "^4.3.1",
     "jquery": "^3.4.1"
   },
   "devDependencies": {
