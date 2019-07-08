@@ -13,3 +13,11 @@ node_modules/animate.css/*
 !node_modules/animate.css/animate.css
 
 !node_modules/animejs
+
+!node_modules/rx
+node_modules/rx/*
+!node_modules/rx/dist
+node_modules/rx/dist/*
+!node_modules/rx/dist/rx.all.js
+!node_modules/rx/dist/rx.all.min.js
+!node_modules/rx/dist/rx.all.map
